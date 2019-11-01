@@ -1,0 +1,71 @@
+.orden {
+    place-content: center;
+}
+
+.orden2 {
+    padding: 2rem;
+}
+
+.bigbig {
+    height: 200px;
+    width: 200px;
+}
+
+.foto {
+    height: 425.33px !important;
+}
+
+.dale {
+    top: 50%;
+    -webkit-transform: translateY(-25%) !important;
+}
+
+.bordecirular {
+    border-radius: 25px;
+}
+
+.datita {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Georgia, serif;
+    font-size: 27px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #FFFFFF;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                    supported by Chrome, Opera and Firefox */
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+.fotosIns {
+    outline: none;
+    color: inherit;
+    text-decoration: none;
+}

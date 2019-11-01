@@ -1,8 +1,24 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { IndexComponent } from './index/index.component';
+import { ReleasesComponent } from './releases/releases.component';
+import { InstrumentosComponent } from './instrumentos/instrumentos.component';
+import { ArtistComponent } from './artist/artist.component';
+import { GuitarrasComponent } from './guitarras/guitarras.component';
+import { TecladosComponent } from './teclados/teclados.component';
+import { AmpsComponent } from './amps/amps.component';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'index', component: IndexComponent },
+  { path: '', redirectTo: '/index', pathMatch: 'full' },
+  { path: 'releases', component: ReleasesComponent },
+  { path: 'instrumentos', component: InstrumentosComponent },
+  { path: 'artist', component: ArtistComponent },
+  { path: 'guitars', component: GuitarrasComponent },
+  { path: 'keys', component: TecladosComponent },
+  { path: 'amps', component: AmpsComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

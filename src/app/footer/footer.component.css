@@ -1,0 +1,28 @@
+.footer-bottom {
+    background-color: #f8f9fa;
+    min-height: 30px;
+    width: 100%;
+}
+
+.copyright {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+}
+
+.design {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+    text-align: right;
+}
+
+.design a {
+    color: #fff;
+}
+
+.somfooter {
+    box-shadow: 0 -.125rem -.25rem rgba(0, 0, 0, .075)!important;
+}

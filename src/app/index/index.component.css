@@ -1,0 +1,14 @@
+    .asd {
+        padding-left: 5rem;
+        padding-right: 5rem;
+        max-height: 425.33px !important;
+    }
+    
+    .foto {
+        height: 425.33px !important;
+    }
+    
+    .dale {
+        top: 50%;
+        -webkit-transform: translateY(-25%) !important;
+    }
