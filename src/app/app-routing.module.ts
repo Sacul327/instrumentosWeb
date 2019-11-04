@@ -7,6 +7,7 @@ import { ArtistComponent } from './artist/artist.component';
 import { GuitarrasComponent } from './guitarras/guitarras.component';
 import { TecladosComponent } from './teclados/teclados.component';
 import { AmpsComponent } from './amps/amps.component';
+import { ReleaseBioComponent } from './release-bio/release-bio.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'guitars', component: GuitarrasComponent },
   { path: 'keys', component: TecladosComponent },
   { path: 'amps', component: AmpsComponent },
+  { path: 'release/:id', component: ReleaseBioComponent },
 ];
 
 @NgModule({

@@ -5,19 +5,19 @@
             <div *ngFor="let release of releases" class="col-md-4">
                 <div class="card mb-4 shadow-sm">
                     <div>
-                        <img class="card-img-top datita" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="{{release.imageUrl}}" data-holder-rendered=" true ">
+                        <a routerLink="/release/{{release.id}}"><img class="card-img-top datita" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="{{release.imageUrl}}" data-holder-rendered=" true "></a>
                     </div>
                     <div class="card-body">
                         <h6>{{release.artistName}}</h6>
                         <p class="card-text">{{release.description}}</p>
 
-                        <div class="d-flex justify-content-between align-items-center">
+                        <!--<div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                             </div>
                             <small class="text-muted">9 mins</small>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>

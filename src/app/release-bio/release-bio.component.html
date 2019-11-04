@@ -1,0 +1,28 @@
+<body class="bg-light asd">
+    <div class="container">
+        <div class="py-5 text-center">
+            <p class="artname">{{release.artistName}}</p>
+            <h2>{{release.releaseName}}</h2>
+            <p class="lead">{{release.description}}</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 order-md-2 mb-4">
+                <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+                <div class='embed-container'>
+                    <iframe [src]='sanitizer.bypassSecurityTrustResourceUrl(release.spotify)' frameborder='0' allowtransparency='true'></iframe>
+                </div>
+            </div>
+            <div class="col-md-4 order-md-1">
+                <img class="si" src="{{release.imageUrl}}" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <script src="form-validation.js"></script>
+
+    <object id="__symantecPKIClientMessenger" data-supports-flavor-configuration="true" data-extension-version="0.5.0.109" style="display: none;"></object><span id="__symantecPKIClientDetector" style="display: none;">__PRESENT</span></body>

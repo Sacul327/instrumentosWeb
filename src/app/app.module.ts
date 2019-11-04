@@ -13,6 +13,7 @@ import { ArtistComponent } from './artist/artist.component';
 import { GuitarrasComponent } from './guitarras/guitarras.component';
 import { TecladosComponent } from './teclados/teclados.component';
 import { AmpsComponent } from './amps/amps.component';
+import { ReleaseBioComponent } from './release-bio/release-bio.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AmpsComponent } from './amps/amps.component';
     ArtistComponent,
     GuitarrasComponent,
     TecladosComponent,
-    AmpsComponent
+    AmpsComponent,
+    ReleaseBioComponent
   ],
   imports: [
     BrowserModule,
