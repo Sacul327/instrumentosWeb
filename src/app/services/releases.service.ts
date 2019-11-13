@@ -1,10 +1,18 @@
 import { Injectable } from '@angular/core';
 import { of, Observable } from 'rxjs';
+import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
+import { map, catchError, tap } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
+
+
+
+
 export class ReleasesService {
+  constructor(private http: HttpClient) { }
+
 
   releases: releases[] = [{
     id: 1,
@@ -60,11 +68,65 @@ export class ReleasesService {
     // TODO: send the message _after_ fetching the hero
     return of(this.releases.find(hero => hero.id === id));
   }
+  // ----------------------------------------------------------------------------
+  // ----------------------------------------------------------------------------
+  // ----------------------------------------------------------------------------
 
 
-  constructor() { }
+  getJson() {
+    const headers = new HttpHeaders ({
+      'Content-Type': 'text/html'
+    });
+
+    //return this.http.get(`localhost:8080/dame`, {headers});
+    this.http.get('localhost:8080/dame',{headers:
+      {'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' } })
+      .subscribe((data: releases) => {
+        // Data extraction from the HTTP response is already done
+        // Display the result
+        console.log('TJ user data', data);
+      });
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  private extractData(res: Response) {
+    let body = res;
+    return body || { };
+  }
+  getProducts(): Observable<any> {
+    // tslint:disable-next-line: no-use-before-declare
+    return this.http.get(endpoint).pipe(
+      map(this.extractData)
+    );
+  }
+  getProduct(id): Observable<any> {
+    // tslint:disable-next-line: no-use-before-declare
+    return this.http.get(endpoint + 'products/' + id).pipe(
+      map(this.extractData));
+  }
+
+
 }
 
+// tslint:disable-next-line: class-name
 export interface releases {
   id: number;
   artistName: string;
@@ -74,3 +136,9 @@ export interface releases {
   releaseDate: string;
   spotify: string;
 }
+const endpoint = 'http://localhost:8080/';
+const httpOptions = {
+  headers: new HttpHeaders({
+    'Content-Type':  'application/json'
+  })
+};

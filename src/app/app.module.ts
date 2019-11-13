@@ -14,6 +14,7 @@ import { GuitarrasComponent } from './guitarras/guitarras.component';
 import { TecladosComponent } from './teclados/teclados.component';
 import { AmpsComponent } from './amps/amps.component';
 import { ReleaseBioComponent } from './release-bio/release-bio.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ReleaseBioComponent } from './release-bio/release-bio.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
